@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Developer Portfolio</string>
+    <string name="developer_name">Your Name</string>
+    <string name="title_item_detail">Item Detail</string>
+
+    <!-- ABOUT PAGE -->
+    <string name="about_me">About Me</string>
+    <string name="about_me_objective">Objective</string>
+    <string name="about_me_summary_title">Qualifications</string>
+    <string name="about_me_summary">Summary</string>
+    <string name="about_me_bullets">&#8226; Accomplishment 2\n
+        &#8226; Accomplishment 3\n
+        &#8226; Accomplishment 4\n
+    </string>
+
+    <!-- EDUCATION PAGE -->
+    <string name="education_title">Education</string>
+
+    <string name="education_school_1">School 1</string>
+    <string name="education_degree_1">Name of major 1</string>
+    <string name="education_gpa_1">G.P.A.</string>
+
+    <string name="education_school_2">School 2</string>
+    <string name="education_degree_2">Name of major 2</string>
+    <string name="education_gpa_2">G.P.A.</string>
+
+    <!-- EXPERIENCE PAGE -->
+    <string name="experience_title">Experience</string>
+
+    <string name="experience_company1_name">Company 1</string>
+    <string name="experience_company1_title">Title  1</string>
+    <string name="experience_company1_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra sapien urna, a scelerisque nisi porta in. Nullam mi neque, molestie ut lorem non, dapibus hendrerit dolor. </string>
+
+    <string name="experience_company2_name">Company 2</string>
+    <string name="experience_company2_title">Title 2</string>
+    <string name="experience_company2_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra sapien urna, a scelerisque nisi porta in. Nullam mi neque, molestie ut lorem non, dapibus hendrerit dolor. </string>
+
+    <string name="experience_company3_name">Company 3</string>
+    <string name="experience_company3_title">Title 3</string>
+    <string name="experience_company3_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra sapien urna, a scelerisque nisi porta in. Nullam mi neque, molestie ut lorem non, dapibus hendrerit dolor. </string>
+
+    <string name="experience_company4_name">Company 4</string>
+    <string name="experience_company4_title">Title 4</string>
+    <string name="experience_company4_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra sapien urna, a scelerisque nisi porta in. Nullam mi neque, molestie ut lorem non, dapibus hendrerit dolor.</string>
+
+    <string name="experience_company5_name">Company 5</string>
+    <string name="experience_company5_title">Title 5</string>
+    <string name="experience_company5_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra sapien urna, a scelerisque nisi porta in. Nullam mi neque, molestie ut lorem non, dapibus hendrerit dolor.</string>
+
+    <string name="experience_company6_name">Company 6</string>
+    <string name="experience_company6_title">Title 6</string>
+    <string name="experience_company6_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra sapien urna, a scelerisque nisi porta in. Nullam mi neque, molestie ut lorem non, dapibus hendrerit dolor.</string>
+
+    <!-- CERTIFICATION PAGE -->
+    <string name="certificates_title">Certificates</string>
+
+    <string name="certificates_cert1_title">Certificate 1 Title</string>
+    <string name="certificates_cert1_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra sapien urna, a scelerisque nisi porta in. Nullam mi neque, molestie ut lorem non, dapibus hendrerit dolor. Maecenas molestie malesuada urna, quis finibus odio varius id. Ut turpis nibh, maximus a tincidunt ac, faucibus ut metus. In scelerisque sem at leo pretium malesuada.</string>
+
+    <string name="certificates_cert2_title">Certificate 2 Title</string>
+    <string name="certificates_cert2_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra sapien urna, a scelerisque nisi porta in. Nullam mi neque, molestie ut lorem non, dapibus hendrerit dolor. Maecenas molestie malesuada urna, quis finibus odio varius id. Ut turpis nibh, maximus a tincidunt ac, faucibus ut metus. In scelerisque sem at leo pretium malesuada.</string>
+
+    <string name="certificates_cert3_title">Certificate 3 Title</string>
+    <string name="certificates_cert3_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra sapien urna, a scelerisque nisi porta in. Nullam mi neque, molestie ut lorem non, dapibus hendrerit dolor. Maecenas molestie malesuada urna, quis finibus odio varius id. Ut turpis nibh, maximus a tincidunt ac, faucibus ut metus. In scelerisque sem at leo pretium malesuada.</string>
+
+    <string name="certificates_cert4_title">Certificate 4 Title</string>
+    <string name="certificates_cert4_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra sapien urna, a scelerisque nisi porta in. Nullam mi neque, molestie ut lorem non, dapibus hendrerit dolor. Maecenas molestie malesuada urna, quis finibus odio varius id. Ut turpis nibh, maximus a tincidunt ac, faucibus ut metus. In scelerisque sem at leo pretium malesuada.</string>
+
+    <string name="certificates_cert5_title">Certificate 5 Title</string>
+    <string name="certificates_cert5_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra sapien urna, a scelerisque nisi porta in. Nullam mi neque, molestie ut lorem non, dapibus hendrerit dolor. Maecenas molestie malesuada urna, quis finibus odio varius id. Ut turpis nibh, maximus a tincidunt ac, faucibus ut metus. In scelerisque sem at leo pretium malesuada.</string>
+
+    <string name="certificates_cert6_title">Certificate 6 Title+</string>
+    <string name="certificates_cert6_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra sapien urna, a scelerisque nisi porta in. Nullam mi neque, molestie ut lorem non, dapibus hendrerit dolor. Maecenas molestie malesuada urna, quis finibus odio varius id. Ut turpis nibh, maximus a tincidunt ac, faucibus ut metus. In scelerisque sem at leo pretium malesuada.</string>
+
+    <!-- ANDROID APPS PAGE -->
+    <string name="android_apps_title">Android Apps</string>
+
+    <string name="android_app1_title">Android App 1 Title</string>
+    <string name="android_app1_description">ELorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra sapien urna, a scelerisque nisi porta in. Nullam mi neque, molestie ut lorem non, dapibus hendrerit dolor. Maecenas molestie malesuada urna, quis finibus odio varius id. Ut turpis nibh, maximus a tincidunt ac, faucibus ut metus. In scelerisque sem at leo pretium malesuada.</string>
+
+    <!-- iOS -->
+    <string name="android_app16_title">iOS App 1 Title</string>
+    <string name="android_app16_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse viverra sapien urna, a scelerisque nisi porta in. Nullam mi neque, molestie ut lorem non, dapibus hendrerit dolor. Maecenas molestie malesuada urna, quis finibus odio varius id. Ut turpis nibh, maximus a tincidunt ac, faucibus ut metus. In scelerisque sem at leo pretium malesuada.
+    </string>
+
+
+    <!-- iOS APPS PAGE -->
+    <string name="ios_apps_title">iOS Apps</string>
+
+    <!-- XAMARIN APPS PAGE -->
+    <string name="xamarin_apps_title">Xamarin Apps</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="@dimen/page_frame_padding"
+    android:orientation="vertical">
+    <TextView
+            android:id="@+id/item_detail"
+            style="@style/AppTheme.PageHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/vertical_item_margin_med"
+            android:text="@string/about_me"
+            android:textIsSelectable="true"
+            tools:context=".ItemDetailFragment" />
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/vertical_item_margin_med"
+            android:layout_marginRight="@dimen/vertical_item_margin_med"
+            android:background="@android:color/white"/>
+
+    <!-- Your Content Here -->
+    <TextView
+            style="@style/AppTheme.PageBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/vertical_item_margin_med"
+            android:text="@string/about_me_summary"/>
+
+    <TextView
+            style="@style/AppTheme.PageBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/vertical_item_margin_med"
+            android:text="@string/about_me_bullets"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="@dimen/page_frame_padding"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+    <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="-100dp"
+            android:src="@drawable/evolution_steps"
+            android:scaleType="fitCenter"
+    />
+</LinearLayout>
