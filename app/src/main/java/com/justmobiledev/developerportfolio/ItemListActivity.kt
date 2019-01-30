@@ -17,25 +17,16 @@ import kotlinx.android.synthetic.main.activity_item_list.*
 import kotlinx.android.synthetic.main.item_list_content.view.*
 import kotlinx.android.synthetic.main.item_list.*
 
-/**
- * An activity representing a list of Pings. This activity
- * has different presentations for handset and tablet-size devices. On
- * handsets, the activity presents a list of items, which when touched,
- * lead to a [ItemDetailActivity] representing
- * item details. On tablets, the activity presents the list of items and
- * item details side-by-side using two vertical panes.
- */
+// Main Activity
 class ItemListActivity : AppCompatActivity() {
 
     companion object {
         val MENU_OBJECTIVE_ID = "1"
-        val MENU_ABOUT_ID = "2"
-        val MENU_EDUCATION_ID = "3"
-        val MENU_EXPERIENCE_ID = "4"
-        val MENU_CERTIFICATES_ID = "5"
-        val MENU_ANDROID_APPS_ID = "6"
-        val MENU_IOS_APPS_ID = "7"
-        val MENU_XAMARIN_APPS_ID = "8"
+        val MENU_EDUCATION_ID = "2"
+        val MENU_EXPERIENCE_ID = "3"
+        val MENU_CERTIFICATES_ID = "4"
+        val MENU_ANDROID_APPS_ID = "5"
+        val MENU_IOS_APPS_ID = "6"
     }
 
     /**
@@ -51,14 +42,9 @@ class ItemListActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         toolbar.title = title
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
-
         if (item_detail_container != null) {
             // The detail container view will be present only in the
-            // large-screen layouts (res/values-w900dp).
+            // large-screen layouts (res/layout-w900dp).
             // If this view is present, then the
             // activity should be in two-pane mode.
             twoPane = true
@@ -67,6 +53,7 @@ class ItemListActivity : AppCompatActivity() {
         setupRecyclerView(item_list)
 
         // Load Detail fragment
+        // Tablet Layout
         if (twoPane) {
             val fragment = ItemDetailFragment().apply {
                 arguments = Bundle().apply {
@@ -79,40 +66,24 @@ class ItemListActivity : AppCompatActivity() {
                 .commit()
 
         } else {
-            val intent = Intent(this, ItemDetailActivity::class.java).apply {
-                putExtra(ItemDetailFragment.ARG_ITEM_ID, "1")
-            }
-            this.startActivity(intent)
+            // Phone Layout
+            //val intent = Intent(this, ItemListActivity::class.java)
+            //this.startActivity(intent)
         }
     }
 
     private fun setupRecyclerView(recyclerView: RecyclerView) {
         val menuItems: MutableList<PortfolioMenuItem> = ArrayList()
 
-        // Create your menu items
-        //val item6 = PortfolioMenuItem(MENU_XAMARIN_APPS_ID, "Xamarin Apps", "")
-        //menuItems.add(0, item6)
+        // Create menu items
+        menuItems.add(0, PortfolioMenuItem(MENU_IOS_APPS_ID, "iOS Apps", ""))
+        menuItems.add(0, PortfolioMenuItem(MENU_ANDROID_APPS_ID, "Android Apps", ""))
+        menuItems.add(0, PortfolioMenuItem(MENU_CERTIFICATES_ID, "Certificates", ""))
+        menuItems.add(0, PortfolioMenuItem(MENU_EXPERIENCE_ID, "Professional Experience", ""))
+        menuItems.add(0, PortfolioMenuItem(MENU_EDUCATION_ID, "Education", ""))
+        menuItems.add(0, PortfolioMenuItem(MENU_OBJECTIVE_ID, "Objective", ""))
 
-        val item5 = PortfolioMenuItem(MENU_IOS_APPS_ID, "iOS Apps", "")
-        menuItems.add(0, item5)
-
-        val item4 = PortfolioMenuItem(MENU_ANDROID_APPS_ID, "Android Apps", "")
-        menuItems.add(0, item4)
-
-        val item3 = PortfolioMenuItem(MENU_CERTIFICATES_ID, "Certificates", "")
-        menuItems.add(0, item3)
-
-
-        val item1 = PortfolioMenuItem(MENU_EXPERIENCE_ID, "Professional Experience", "")
-        menuItems.add(0, item1)
-
-        val item2 = PortfolioMenuItem(MENU_EDUCATION_ID, "Education", "")
-        menuItems.add(0, item2)
-
-        val item0 = PortfolioMenuItem(MENU_OBJECTIVE_ID, "Objective", "")
-        menuItems.add(0, item0)
-
-
+        // Set Menu items
         recyclerView.adapter = SimpleItemRecyclerViewAdapter(this, menuItems, twoPane)
     }
 
@@ -127,10 +98,12 @@ class ItemListActivity : AppCompatActivity() {
             onClickListener = View.OnClickListener { v ->
                 val item = v.tag as PortfolioMenuItem
 
+                // Tablet Layout
                 if (twoPane) {
                     val fragment = ItemDetailFragment().apply {
                         arguments = Bundle().apply {
-                            putString(ItemDetailFragment.ARG_ITEM_ID, item.id.toString())
+                            putString(ItemDetailFragment.ARG_ITEM_ID, item.id)
+                            putString(ItemDetailFragment.ARG_ITEM_NAME, item.title)
                         }
                     }
                     parentActivity.supportFragmentManager
@@ -139,8 +112,10 @@ class ItemListActivity : AppCompatActivity() {
                         .commit()
 
                 } else {
+                    // Phone Layout
                     val intent = Intent(v.context, ItemDetailActivity::class.java).apply {
                         putExtra(ItemDetailFragment.ARG_ITEM_ID, item.id)
+                        putExtra(ItemDetailFragment.ARG_ITEM_NAME, item.title)
                     }
                     v.context.startActivity(intent)
                 }

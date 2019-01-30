@@ -6,11 +6,10 @@
     <dimen name="text_margin">16dp</dimen>
     <dimen name="vertical_item_margin_med">10dp</dimen>
     <dimen name="vertical_item_margin_large">30dp</dimen>
-    <dimen name="page_frame_padding">12dp</dimen>
-    <dimen name="page_item_padding_med">12dp</dimen>
-    <dimen name="app_phone_screenshot_height">500dp</dimen>
-    <dimen name="page_heading_font_size">22sp</dimen>
-    <dimen name="font_size_body">12sp</dimen>
-    <dimen name="font_size_heading_1">14sp</dimen>
-
+    <dimen name="page_frame_padding">30dp</dimen>
+    <dimen name="page_item_padding_med">10dp</dimen>
+    <dimen name="app_phone_screenshot_height">360dp</dimen>
+    <dimen name="page_heading_font_size">24sp</dimen>
+    <dimen name="font_size_body">16sp</dimen>
+    <dimen name="font_size_heading_1">20sp</dimen>
 </resources>

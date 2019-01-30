@@ -9,8 +9,7 @@
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-        android:orientation="vertical">
-
+            android:orientation="vertical">
         <!-- PAGE HEADING -->
         <TextView
                 android:id="@+id/item_detail"
@@ -30,12 +29,14 @@
                 android:background="@android:color/white"/>
 
 
-        <!-- App 1, Row 1 -->
+
+
+        <!-- App 7, Row 1 -->
         <LinearLayout
-                      android:layout_height="wrap_content"
-                      android:layout_width="match_parent"
-                      android:layout_marginTop="@dimen/vertical_item_margin_large"
-                      android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/vertical_item_margin_large"
+                android:orientation="horizontal">
             <LinearLayout
                     android:layout_height="wrap_content"
                     android:layout_width="0dp"
@@ -43,11 +44,8 @@
                     android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="60dp"
-                    android:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_app"
-                    android:scaleType="fitCenter"/>
+                        style="@style/AppTheme.AppIconStyle"
+                        app:srcCompat="@drawable/ic_app"/>
                 <LinearLayout
                         android:layout_height="wrap_content"
                         android:layout_width="match_parent"
@@ -58,7 +56,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/vertical_item_margin_med"
                             android:textStyle="bold"
-                            android:text="@string/android_app16_title"/>
+                            android:text="@string/ios_app1_title"/>
                     <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
@@ -69,12 +67,12 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/vertical_item_margin_med"
-                            android:text="@string/android_app16_description"/>
+                            android:text="@string/ios_app1_description"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Row 2 -->
+        <!-- App 7, Row 2 -->
         <LinearLayout
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
@@ -82,37 +80,33 @@
                 android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="0dp"
-                android:layout_height="@dimen/app_phone_screenshot_height"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/ss_app_1"
-                android:scaleType="fitCenter"/>
-
-            <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/app_phone_screenshot_height"
+                    android:layout_width="9dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/ss_app_1"
+                    android:layout_height="@dimen/app_phone_screenshot_height"
+                    app:srcCompat="@drawable/phone_screenshot_1"
                     android:scaleType="fitCenter"/>
 
             <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/app_phone_screenshot_height"
+                    android:layout_width="9dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/ss_app_1"
+                    android:layout_height="@dimen/app_phone_screenshot_height"
+                    app:srcCompat="@drawable/phone_screenshot_2"
                     android:scaleType="fitCenter"/>
 
             <ImageView
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/app_phone_screenshot_height"
+                    android:layout_width="9dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/ss_app_1"
+                    android:layout_height="@dimen/app_phone_screenshot_height"
+                    app:srcCompat="@drawable/phone_screenshot_1"
+                    android:scaleType="fitCenter"/>
+
+            <ImageView
+                    android:layout_width="9dp"
+                    android:layout_weight="1"
+                    android:layout_height="@dimen/app_phone_screenshot_height"
+                    app:srcCompat="@drawable/phone_screenshot_2"
                     android:scaleType="fitCenter"/>
         </LinearLayout>
-
-
-
-
 
 
 

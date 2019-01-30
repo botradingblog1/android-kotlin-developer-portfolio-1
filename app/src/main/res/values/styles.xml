@@ -21,15 +21,54 @@
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="AppTheme.PageHeading">
-        <item name="android:textSize">22dp</item>
+        <item name="android:textSize">@dimen/page_heading_font_size</item>
         <item name="android:textColor">@color/colorAccent</item>
     </style>
     <style name="AppTheme.PageBody">
-        <item name="android:textSize">16dp</item>
+        <item name="android:textSize">@dimen/font_size_body</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+    <style name="AppTheme.PageHeading1">
+        <item name="android:textSize">@dimen/font_size_heading_1</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.PageHeading2">
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.PageHeading3">
+        <item name="android:textSize">12dp</item>
         <item name="android:textColor">@color/colorWhite</item>
     </style>
     <style name="AppTheme.PageBodyAccent">
         <item name="android:textSize">16dp</item>
         <item name="android:textColor">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.AppIconStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="AppTheme.CompanyIconStyle">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">12dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="AppTheme.ScreenshotStyle">
+    <item name="android:layout_marginTop">16dp</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:scaleType">fitCenter</item>
+    </style>
+    <style name="AppTheme.ScreenshotStylePhone">
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">fitCenter</item>
     </style>
 </resources>

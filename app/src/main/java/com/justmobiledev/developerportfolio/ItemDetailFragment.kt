@@ -31,7 +31,14 @@ class ItemDetailFragment : Fragment() {
                 // arguments. In a real-world scenario, use a Loader
                 // to load content from a content provider.
                 item = PortfolioContent.ITEM_MAP[it.getString(ARG_ITEM_ID)]
-                activity?.toolbar_layout?.title = item?.content
+            }
+            if (it.containsKey(ARG_ITEM_NAME)) {
+                // Load the dummy content specified by the fragment
+                // arguments. In a real-world scenario, use a Loader
+                // to load content from a content provider.
+                var title = it.getString(ARG_ITEM_NAME)
+
+                activity?.toolbar_layout?.title = title
             }
         }
     }
@@ -45,10 +52,6 @@ class ItemDetailFragment : Fragment() {
         if (item?.id.equals(ItemListActivity.MENU_OBJECTIVE_ID))
         {
             rootView = inflater.inflate(R.layout.fragment_objective, container, false)
-        }
-        else if (item?.id.equals(ItemListActivity.MENU_ABOUT_ID))
-        {
-            rootView = inflater.inflate(R.layout.fragment_about, container, false)
         }
         else if (item?.id.equals(ItemListActivity.MENU_EXPERIENCE_ID))
         {
@@ -74,12 +77,6 @@ class ItemDetailFragment : Fragment() {
             rootView = inflater.inflate(R.layout.fragment_evolution_steps, container, false)
         }
 
-
-        // Show the dummy content as text in a TextView.
-        /* item?.let {
-            rootView.item_detail.text = it.details
-        }*/
-
         return rootView
     }
 
@@ -89,5 +86,6 @@ class ItemDetailFragment : Fragment() {
          * represents.
          */
         const val ARG_ITEM_ID = "item_id"
+        const val ARG_ITEM_NAME = "item_name"
     }
 }

@@ -11,7 +11,7 @@ import kotlinx.android.synthetic.main.activity_item_detail.*
  * An activity representing a single Item detail screen. This
  * activity is only used on narrow width devices. On tablet-size devices,
  * item details are presented side-by-side with a list of items
- * in a [ItemListActivity].
+ * in a [ItemListActivity]
  */
 class ItemDetailActivity : AppCompatActivity() {
 
@@ -19,11 +19,6 @@ class ItemDetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_item_detail)
         setSupportActionBar(detail_toolbar)
-
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own detail action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
-        }
 
         // Show the Up button in the action bar.
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
@@ -44,6 +39,8 @@ class ItemDetailActivity : AppCompatActivity() {
                 arguments = Bundle().apply {
                     putString(ItemDetailFragment.ARG_ITEM_ID,
                             intent.getStringExtra(ItemDetailFragment.ARG_ITEM_ID))
+                    putString(ItemDetailFragment.ARG_ITEM_NAME,
+                        intent.getStringExtra(ItemDetailFragment.ARG_ITEM_NAME))
                 }
             }
 

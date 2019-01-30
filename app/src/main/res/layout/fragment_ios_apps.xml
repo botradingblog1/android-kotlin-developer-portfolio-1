@@ -10,15 +10,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
-
-        <!-- FIRST APP -->
+        <!-- PAGE HEADING -->
         <TextView
                 android:id="@+id/item_detail"
                 style="@style/AppTheme.PageHeading"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/vertical_item_margin_med"
-                android:text="@string/android_apps_title"
+                android:text="@string/ios_apps_title"
                 android:textIsSelectable="true"
                 tools:context=".ItemDetailFragment" />
 
@@ -29,18 +28,20 @@
                 android:layout_marginRight="@dimen/vertical_item_margin_med"
                 android:background="@android:color/white"/>
 
-        <!-- Your Content Here -->
-        <!-- Row 1 -->
+
+
+
+        <!-- App 7, Row 1 -->
         <LinearLayout
-                      android:layout_height="wrap_content"
-                      android:layout_width="match_parent"
-                      android:layout_marginTop="@dimen/vertical_item_margin_large"
-                      android:orientation="horizontal">
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/vertical_item_margin_large"
+                android:orientation="vertical">
             <LinearLayout
                     android:layout_height="wrap_content"
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
+                    android:layout_width="match_parent"
                     android:orientation="horizontal">
+
                 <ImageView
                         style="@style/AppTheme.AppIconStyle"
                         app:srcCompat="@drawable/ic_app"/>
@@ -54,7 +55,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/vertical_item_margin_med"
                             android:textStyle="bold"
-                            android:text="@string/android_app1_title"/>
+                            android:text="@string/ios_app1_title"/>
                     <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
@@ -65,45 +66,36 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/vertical_item_margin_med"
-                            android:text="@string/android_app1_description"/>
+                            android:text="@string/ios_app1_description"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
 
-        <!-- Row 2 -->
+        <!-- App 1, Row 2 -->
         <LinearLayout
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:layout_marginTop="@dimen/vertical_item_margin_large"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="@dimen/app_phone_screenshot_height"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/phone_screenshot_1"
-                android:scaleType="fitCenter"/>
-
-            <ImageView
-                    android:layout_width="0dp"
+            <com.jsibbold.zoomage.ZoomageView
+                    style="@style/AppTheme.ScreenshotStyle"
                     android:layout_height="@dimen/app_phone_screenshot_height"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/phone_screenshot_2"
-                    android:scaleType="fitCenter"/>
+                    app:srcCompat="@drawable/phone_screenshot_1"/>
 
-            <ImageView
-                    android:layout_width="0dp"
+            <com.jsibbold.zoomage.ZoomageView
+                    style="@style/AppTheme.ScreenshotStyle"
                     android:layout_height="@dimen/app_phone_screenshot_height"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/phone_screenshot_1"
-                    android:scaleType="fitCenter"/>
+                    app:srcCompat="@drawable/phone_screenshot_2"/>
 
-            <ImageView
-                    android:layout_width="0dp"
+            <com.jsibbold.zoomage.ZoomageView
+                    style="@style/AppTheme.ScreenshotStyle"
                     android:layout_height="@dimen/app_phone_screenshot_height"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/phone_screenshot_2"
-                    android:scaleType="fitCenter"/>
+                    app:srcCompat="@drawable/phone_screenshot_1"/>
+
+            <com.jsibbold.zoomage.ZoomageView
+                    style="@style/AppTheme.ScreenshotStyle"
+                    android:layout_height="@dimen/app_phone_screenshot_height"
+                    app:srcCompat="@drawable/phone_screenshot_2"/>
         </LinearLayout>
 
 

@@ -8,5 +8,6 @@
     android:padding="@dimen/vertical_item_margin_med"
     android:textColor="#ffffff"
     android:text="this is the text"
+    android:textSize="@dimen/font_size_body"
     android:textIsSelectable="true"
     tools:context=".ItemDetailFragment" />

@@ -1,288 +1,293 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               xmlns:app="http://schemas.android.com/apk/res-auto"
               android:layout_height="match_parent"
               android:layout_width="match_parent"
               android:padding="@dimen/page_frame_padding"
               android:orientation="vertical">
-    <TextView
-            android:id="@+id/item_detail"
-            style="@style/AppTheme.PageHeading"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="@dimen/vertical_item_margin_med"
-            android:text="@string/certificates_title"
-            android:textIsSelectable="true"
-            tools:context=".ItemDetailFragment" />
-
-    <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginLeft="@dimen/vertical_item_margin_med"
-            android:layout_marginRight="@dimen/vertical_item_margin_med"
-            android:background="@android:color/white"/>
-
-    <!-- Your Content Here -->
-    <!-- Row 1 -->
     <LinearLayout
-                  android:layout_height="wrap_content"
-                  android:layout_width="match_parent"
-                  android:layout_marginTop="@dimen/vertical_item_margin_large"
-                  android:orientation="horizontal">
-        <!-- column 1-->
-        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+        <TextView
+                android:id="@+id/item_detail"
+                style="@style/AppTheme.PageHeading"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
+                android:padding="@dimen/vertical_item_margin_med"
+                android:text="@string/certificates_title"
+                android:textIsSelectable="true"
+                tools:context=".ItemDetailFragment" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/ic_android"
-                android:scaleType="fitCenter"/>
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/vertical_item_margin_med"
+                android:layout_marginRight="@dimen/vertical_item_margin_med"
+                android:background="@android:color/white"/>
+
+        <!-- Your Content Here -->
+        <!-- Row 1 -->
+        <LinearLayout
+                      android:layout_height="wrap_content"
+                      android:layout_width="match_parent"
+                      android:layout_marginTop="@dimen/vertical_item_margin_large"
+                      android:orientation="horizontal">
+            <!-- column 1-->
             <LinearLayout
                     android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical">
-                <TextView
-                        style="@style/AppTheme.PageBody"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:textStyle="bold"
-                        android:text="@string/certificates_cert1_title"/>
-                <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:background="@color/colorDarkGrey"/>
-                <TextView
-                        style="@style/AppTheme.PageBody"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:text="@string/certificates_cert1_description"/>
-            </LinearLayout>
-        </LinearLayout>
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
-        <!-- column 2 -->
-        <LinearLayout
-                android:layout_height="wrap_content"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-            <ImageView
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="30dp"
                     android:layout_gravity="center"
                     app:srcCompat="@drawable/ic_android"
                     android:scaleType="fitCenter"/>
+                <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+                    <TextView
+                            style="@style/AppTheme.PageHeading2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:textStyle="bold"
+                            android:text="@string/certificates_cert1_title"/>
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:background="@color/colorDarkGrey"/>
+                    <TextView
+                            style="@style/AppTheme.PageBody"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:text="@string/certificates_cert1_description"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- column 2 -->
             <LinearLayout
                     android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical">
-                <TextView
-                        style="@style/AppTheme.PageBody"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:textStyle="bold"
-                        android:text="@string/certificates_cert2_title"/>
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
 
-                <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:background="@color/colorDarkGrey"/>
-
-                <TextView
-                        style="@style/AppTheme.PageBody"
-                        android:layout_width="match_parent"
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_android"
+                        android:scaleType="fitCenter"/>
+                <LinearLayout
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:text="@string/certificates_cert2_description"/>
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+                    <TextView
+                            style="@style/AppTheme.PageHeading2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:textStyle="bold"
+                            android:text="@string/certificates_cert2_title"/>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:background="@color/colorDarkGrey"/>
+
+                    <TextView
+                            style="@style/AppTheme.PageBody"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:text="@string/certificates_cert2_description"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/vertical_item_margin_large"
+                android:orientation="horizontal">
+
+            <!-- column 1 -->
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_apple"
+                        android:scaleType="fitCenter"/>
+                <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+                    <TextView
+                            style="@style/AppTheme.PageHeading2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:textStyle="bold"
+                            android:text="@string/certificates_cert3_title"/>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:background="@color/colorDarkGrey"/>
+
+                    <TextView
+                            style="@style/AppTheme.PageBody"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:text="@string/certificates_cert3_description"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- column 2 -->
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_gear"
+                        android:scaleType="fitCenter"/>
+                <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+                    <TextView
+                            style="@style/AppTheme.PageHeading2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:textStyle="bold"
+                            android:text="@string/certificates_cert4_title"/>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:background="@color/colorDarkGrey"/>
+
+                    <TextView
+                            style="@style/AppTheme.PageBody"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:text="@string/certificates_cert4_description"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Row 3 -->
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/vertical_item_margin_large"
+                android:orientation="horizontal">
+
+            <!-- column 1 -->
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_python"
+                        android:scaleType="fitCenter"/>
+                <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+                    <TextView
+                            style="@style/AppTheme.PageHeading2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:textStyle="bold"
+                            android:text="@string/certificates_cert5_title"/>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:background="@color/colorDarkGrey"/>
+
+                    <TextView
+                            style="@style/AppTheme.PageBody"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:text="@string/certificates_cert5_description"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- column 2 -->
+            <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_lock"
+                        android:scaleType="fitCenter"/>
+                <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical">
+                    <TextView
+                            style="@style/AppTheme.PageHeading2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:textStyle="bold"
+                            android:text="@string/certificates_cert6_title"/>
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:background="@color/colorDarkGrey"/>
+
+                    <TextView
+                            style="@style/AppTheme.PageBody"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/vertical_item_margin_med"
+                            android:text="@string/certificates_cert6_description"/>
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
-    <!-- Row 2 -->
-    <LinearLayout
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_marginTop="@dimen/vertical_item_margin_large"
-            android:orientation="horizontal">
-
-        <!-- column 1 -->
-        <LinearLayout
-                android:layout_height="wrap_content"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-            <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_apple"
-                    android:scaleType="fitCenter"/>
-            <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical">
-                <TextView
-                        style="@style/AppTheme.PageBody"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:textStyle="bold"
-                        android:text="@string/certificates_cert3_title"/>
-
-                <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:background="@color/colorDarkGrey"/>
-
-                <TextView
-                        style="@style/AppTheme.PageBody"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:text="@string/certificates_cert3_description"/>
-            </LinearLayout>
-        </LinearLayout>
-
-        <!-- column 2 -->
-        <LinearLayout
-                android:layout_height="wrap_content"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-            <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_gear"
-                    android:scaleType="fitCenter"/>
-            <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical">
-                <TextView
-                        style="@style/AppTheme.PageBody"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:textStyle="bold"
-                        android:text="@string/certificates_cert4_title"/>
-
-                <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:background="@color/colorDarkGrey"/>
-
-                <TextView
-                        style="@style/AppTheme.PageBody"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:text="@string/certificates_cert4_description"/>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-
-
-    <!-- Row 3 -->
-    <LinearLayout
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:layout_marginTop="@dimen/vertical_item_margin_large"
-            android:orientation="horizontal">
-
-        <!-- column 1 -->
-        <LinearLayout
-                android:layout_height="wrap_content"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-            <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_python"
-                    android:scaleType="fitCenter"/>
-            <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical">
-                <TextView
-                        style="@style/AppTheme.PageBody"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:textStyle="bold"
-                        android:text="@string/certificates_cert5_title"/>
-
-                <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:background="@color/colorDarkGrey"/>
-
-                <TextView
-                        style="@style/AppTheme.PageBody"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:text="@string/certificates_cert5_description"/>
-            </LinearLayout>
-        </LinearLayout>
-
-        <!-- column 2 -->
-        <LinearLayout
-                android:layout_height="wrap_content"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-            <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    app:srcCompat="@drawable/ic_lock"
-                    android:scaleType="fitCenter"/>
-            <LinearLayout
-                    android:layout_height="wrap_content"
-                    android:layout_width="match_parent"
-                    android:orientation="vertical">
-                <TextView
-                        style="@style/AppTheme.PageBody"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:textStyle="bold"
-                        android:text="@string/certificates_cert6_title"/>
-
-                <View
-                        android:layout_width="match_parent"
-                        android:layout_height="1dp"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:background="@color/colorDarkGrey"/>
-
-                <TextView
-                        style="@style/AppTheme.PageBody"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/vertical_item_margin_med"
-                        android:text="@string/certificates_cert6_description"/>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-</LinearLayout>
+</ScrollView>

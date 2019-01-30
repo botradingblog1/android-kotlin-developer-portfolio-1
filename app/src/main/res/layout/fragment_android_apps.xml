@@ -74,37 +74,29 @@
         <LinearLayout
                 android:layout_height="wrap_content"
                 android:layout_width="match_parent"
-                android:layout_marginTop="@dimen/vertical_item_margin_large"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="@dimen/app_phone_screenshot_height"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/phone_screenshot_1"
-                android:scaleType="fitCenter"/>
-
-            <ImageView
-                    android:layout_width="0dp"
+            <com.jsibbold.zoomage.ZoomageView
+                    style="@style/AppTheme.ScreenshotStyle"
                     android:layout_height="@dimen/app_phone_screenshot_height"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/phone_screenshot_2"
-                    android:scaleType="fitCenter"/>
+                    app:srcCompat="@drawable/phone_screenshot_1"/>
 
-            <ImageView
-                    android:layout_width="0dp"
+            <com.jsibbold.zoomage.ZoomageView
+                    style="@style/AppTheme.ScreenshotStyle"
                     android:layout_height="@dimen/app_phone_screenshot_height"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/phone_screenshot_1"
-                    android:scaleType="fitCenter"/>
+                    app:srcCompat="@drawable/phone_screenshot_2"/>
 
-            <ImageView
-                    android:layout_width="0dp"
+            <com.jsibbold.zoomage.ZoomageView
+                    style="@style/AppTheme.ScreenshotStyle"
                     android:layout_height="@dimen/app_phone_screenshot_height"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/phone_screenshot_2"
-                    android:scaleType="fitCenter"/>
+                    app:srcCompat="@drawable/phone_screenshot_1"/>
+
+            <com.jsibbold.zoomage.ZoomageView
+                    style="@style/AppTheme.ScreenshotStyle"
+                    android:layout_height="@dimen/app_phone_screenshot_height"
+                    app:srcCompat="@drawable/phone_screenshot_2"/>
         </LinearLayout>
+
 
 
 
